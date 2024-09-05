@@ -19,18 +19,34 @@ public class Celular {
     }
 
     public void desligarCelular() {
-            System.out.println("Desligando Celular...");
-        }
+        System.out.println("Desligando Celular...");
+    }
 
     public String getMarca() {
-            return marca;
-        }
+        return marca;
+    }
 
     public String getModelo() {
-            return modelo;
-        }
+        return modelo;
+    }
 
     public int getCapacidadeDeBateria() {
-            return capacidadeDeBateria;
+        return capacidadeDeBateria;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void setCapacidadeDeBateria(int capacidadeDeBateria) {
+        if (capacidadeDeBateria > 0) {
+            this.capacidadeDeBateria = capacidadeDeBateria;
+        } else {
+            System.out.println("A capacidade de bateria deve ser positiva.");
         }
+    }
 }
