@@ -1,3 +1,5 @@
+package Produto.src;
+
 public class Endereco {
     private Boolean enderecoAtual;
     private String rua;
